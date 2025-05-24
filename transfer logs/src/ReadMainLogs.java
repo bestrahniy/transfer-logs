@@ -22,7 +22,7 @@ public class ReadMainLogs {
         return INSTANCE;
     }
 
-    private Path PROJECT_ROOT = Paths.get(System.getProperty("user.dir"));
+    private Path PROJECT_ROOT = Paths.get(System.getProperty("user.dir")).resolve("transfer logs");
 
     private Path LOGS_DIR = PROJECT_ROOT.resolve("transactions_by_users");
 
